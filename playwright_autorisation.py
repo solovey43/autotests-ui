@@ -25,5 +25,4 @@ with sync_playwright() as playwright:
     expect(wrong_email_or_password_alert).to_be_visible()
     expect(wrong_email_or_password_alert).to_have_text("Wrong email or password")
 
-    # Задержка для наглядности выполнения теста (не рекомендуется использовать в реальных автотестах)
-    page.wait_for_timeout(5000)
+
